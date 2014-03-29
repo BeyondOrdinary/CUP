@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{168EE32C-64FB-49A9-B664-51182FD55DBD}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyName>cupgen</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CUP</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>CUP_core.xml</DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="CUP_Runtime\CUP.csproj">
+      <Name>CUP_Runtime</Name>
+      <Project>{D53CD222-CB35-406B-9C80-9324D969CA61}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="action_part.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="action_production.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="assoc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="emit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="internal_error.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lalr_item.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lalr_item_set.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lalr_state.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lalr_transition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lexer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lr_item_core.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nonassoc_action.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="non_terminal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="parser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="parse_action.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="parse_action_row.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="parse_action_table.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="parse_reduce_row.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="parse_reduce_table.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="production.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="production_part.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reduce_action.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="shift_action.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SupportClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sym.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="symbol.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="symbol_part.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="symbol_set.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="terminal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="terminal_set.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="version.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="App.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

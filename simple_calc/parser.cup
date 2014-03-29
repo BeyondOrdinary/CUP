@@ -1,0 +1,79 @@
+// JavaCup specification for a simple expression evaluator (w/ actions)
+
+package BeyondOrdinary.Rater.Rules;
+
+import CUP.runtime;
+
+/* Terminals (tokens returned by the scanner). */
+terminal           SEMI, PLUS, MINUS, TIMES, DIVIDE, MOD;
+terminal           UMINUS, LPAREN, RPAREN;
+terminal int       INTEGER;
+termianl double    REAL;
+terminal           MACRO;
+
+/* Non terminals */
+non terminal double  expr_list, expr_part;
+non terminal double  expr;
+
+/* Precedences */
+precedence left PLUS, MINUS;
+precedence left TIMES, DIVIDE, MOD;
+precedence left UMINUS, LPAREN;
+
+/* The grammar */
+expr_list ::= expr_list expr_part 
+	      | 
+           expr_part : e
+           {: RESULT = e; :}
+          ;
+
+expr_part ::= expr:e 
+	      {: RESULT = e;
+             Console.WriteLine("= " + e); 
+           :} 
+              SEMI              
+	      ;
+
+expr      ::= expr:e1 PLUS expr:e2    
+	      {: 
+			 RESULT = e1 + e1;
+           :} 
+	      | 
+              expr:e1 MINUS expr:e2    
+	      {: 
+	         RESULT = e1 - e2;
+           :} 
+	      | 
+              expr:e1 TIMES expr:e2 
+	      {: 
+	         RESULT = e1 * e2;
+           :} 
+	      | 
+              expr:e1 DIVIDE expr:e2 
+	      {: 
+	         RESULT = e1 / e2;
+           :} 
+	      | 
+              expr:e1 MOD expr:e2 
+	      {: 
+	         RESULT = (double)((int)e1 % (int)e2);
+           :} 
+	      | 
+              INTEGER:n
+           {:
+              RESULT = n;
+            :}
+          |   REAL:n
+           {:
+              RESULT = n;
+            :}
+	      | 
+              MINUS expr:e             
+	      {: 
+	         RESULT = -e;
+           :} 
+	      %prec UMINUS
+	      | 
+              LPAREN expr:e RPAREN     
+	      {: RESULT = e; :} 
+	      ;

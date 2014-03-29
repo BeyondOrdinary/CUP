@@ -1,0 +1,36 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CUP_Core", "CUP_Core.csproj", "{168EE32C-64FB-49A9-B664-51182FD55DBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CUP", "CUP_Runtime\CUP.csproj", "{D53CD222-CB35-406B-9C80-9324D969CA61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCalc", "simple_calc\SimpleCalc.csproj", "{FBC96E3C-0B0D-47A3-A2CC-75B0B3EB922A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6986F64A-EC7D-415B-9846-5C2537928532}"
+	ProjectSection(SolutionItems) = preProject
+		BO-Installer-Banner.jpg = BO-Installer-Banner.jpg
+		bologo.jpg = bologo.jpg
+		strongname.snk = strongname.snk
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{168EE32C-64FB-49A9-B664-51182FD55DBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{168EE32C-64FB-49A9-B664-51182FD55DBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D53CD222-CB35-406B-9C80-9324D969CA61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D53CD222-CB35-406B-9C80-9324D969CA61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D53CD222-CB35-406B-9C80-9324D969CA61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D53CD222-CB35-406B-9C80-9324D969CA61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBC96E3C-0B0D-47A3-A2CC-75B0B3EB922A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBC96E3C-0B0D-47A3-A2CC-75B0B3EB922A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBC96E3C-0B0D-47A3-A2CC-75B0B3EB922A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBC96E3C-0B0D-47A3-A2CC-75B0B3EB922A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
