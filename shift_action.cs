@@ -72,7 +72,7 @@ namespace CUP
 		
 		/// <summary>Generic equality test. 
 		/// </summary>
-		public  override bool Equals(System.Object other)
+		public  override bool Equals(object other)
 		{
 			if (other is shift_action)
 				return equals((shift_action) other);
@@ -94,7 +94,7 @@ namespace CUP
 		
 		/// <summary>Convert to a string. 
 		/// </summary>
-		public override System.String ToString()
+		public override string ToString()
 		{
 			return "SHIFT(to state " + shift_to().index() + ")";
 		}

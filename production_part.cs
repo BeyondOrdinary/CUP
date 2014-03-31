@@ -25,7 +25,7 @@ namespace CUP
 		
 		/// <summary>Simple constructor. 
 		/// </summary>
-		public production_part(System.String lab)
+		public production_part(string lab)
 		{
 			_label = lab;
 		}
@@ -37,12 +37,12 @@ namespace CUP
 		/// <summary>Optional label for referring to the part within an action (null for 
 		/// no label). 
 		/// </summary>
-		protected System.String _label;
+		protected string _label;
 		
 		/// <summary>Optional label for referring to the part within an action (null for 
 		/// no label). 
 		/// </summary>
-		public virtual System.String label()
+		public virtual string label()
 		{
 			return _label;
 		}
@@ -76,7 +76,7 @@ namespace CUP
 		
 		/// <summary>Generic equality comparison. 
 		/// </summary>
-		public  override bool Equals(System.Object other)
+		public  override bool Equals(object other)
 		{
 			if (!(other is production_part))
 				return false;
@@ -97,7 +97,7 @@ namespace CUP
 		
 		/// <summary>Convert to a string. 
 		/// </summary>
-		public override System.String ToString()
+		public override string ToString()
 		{
 			if (label() != null)
 				return label() + ":";

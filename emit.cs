@@ -114,49 +114,49 @@ namespace CUP
 		
 		/// <summary>The prefix placed on names that pollute someone else's name space. 
 		/// </summary>
-		public static System.String prefix = "CUP_";
+		public static string prefix = "CUP_";
 		
 		/*. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .*/
 		
 		/// <summary>Package that the resulting code goes into (null is used for unnamed). 
 		/// </summary>
-		public static System.String namespace_name = null;
+		public static string namespace_name = null;
 		
 		/*. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .*/
 		
 		/// <summary>Name of the generated class for symbol constants. 
 		/// </summary>
-		public static System.String symbol_const_class_name = "sym";
+		public static string symbol_const_class_name = "sym";
 		
 		/*. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .*/
 		
 		/// <summary>Name of the generated parser class. 
 		/// </summary>
-		public static System.String parser_class_name = "parser";
+		public static string parser_class_name = "parser";
 		
 		/*. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .*/
 		
 		/// <summary>User declarations for direct inclusion in user action class. 
 		/// </summary>
-		public static System.String action_code = null;
+		public static string action_code = null;
 		
 		/*. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .*/
 		
 		/// <summary>User declarations for direct inclusion in parser class. 
 		/// </summary>
-		public static System.String parser_code = null;
+		public static string parser_code = null;
 		
 		/*. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .*/
 		
 		/// <summary>User code for user_init() which is called during parser initialization. 
 		/// </summary>
-		public static System.String init_code = null;
+		public static string init_code = null;
 		
 		/*. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .*/
 		
 		/// <summary>User code for scan() which is called to get the next Symbol. 
 		/// </summary>
-		public static System.String scan_code = null;
+		public static string scan_code = null;
 		
 		/*. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .*/
 		
@@ -251,7 +251,7 @@ namespace CUP
 		/// <param name="str">string to prefix.
 		/// 
 		/// </param>
-		protected internal static System.String pre(System.String str)
+		protected internal static string pre(string str)
 		{
 			return prefix + parser_class_name + "_" + str;
 		}
@@ -421,7 +421,41 @@ namespace CUP
 				 string strPrimitives="int;float;double;short;char;byte;decimal;sbyte;bool;ushort;uint;long;ulong";
 				 if(strPrimitives.IndexOf(strSymType) > -1) 
 				 {
-					 out_Renamed.WriteLine("              " + strSymType + " RESULT ;");
+                     string init = "";
+                     switch (strSymType)
+                     {
+                         case "double": 
+                             init = " = 0.0"; 
+                             break;
+                         case "int":
+                         case "uint":
+                         case "short":
+                         case "ushort":
+                         case "byte":
+                         case "sbyte":
+                             init = " = 0"; 
+                             break;
+                         case "float":
+                             init = " = 0.0f";
+                             break;
+                         case "decimal":
+                             init = " = decimal.Zero";
+                             break;
+                         case "char":
+                             init = " = '\\0'";
+                             break;
+                         case "long":
+                         case "ulong":
+                             init = " = 0L"; 
+                             break;
+
+                     }
+                     if (strSymType == "double")
+                     {
+                         init = " = 0.0";
+                     }
+
+					 out_Renamed.WriteLine("              " + strSymType + " RESULT "  + init + ";");
 				 }
 				 else 
 				 {
@@ -552,7 +586,7 @@ namespace CUP
 			/* do the top of the table */
 			out_Renamed.WriteLine();
 			out_Renamed.WriteLine("  /** Production table. */");
-			out_Renamed.Write("  private static String[] _strProductionTable = ");
+			out_Renamed.Write("  private static string[] _strProductionTable = ");
 			do_table_as_string(out_Renamed, prod_table);
 			out_Renamed.WriteLine(";");
 			out_Renamed.WriteLine("  protected static readonly short[][] _production_table  = CUP.runtime.lr_parser.unpackFromStrings(_strProductionTable);");
@@ -658,7 +692,7 @@ namespace CUP
 			/* finish off the init of the table */
 			out_Renamed.WriteLine();
 			out_Renamed.WriteLine("  /** Parse-action table. */");
-			out_Renamed.Write("  private static String[] _strActionTable = ");
+			out_Renamed.Write("  private static string[] _strActionTable = ");
 			do_table_as_string(out_Renamed, action_table);
 			out_Renamed.WriteLine(";");
 			out_Renamed.WriteLine("  protected static short[][] _action_table = CUP.runtime.lr_parser.unpackFromStrings(_strActionTable);");
@@ -724,7 +758,7 @@ namespace CUP
 			/* emit the table. */
 			out_Renamed.WriteLine();
 			out_Renamed.WriteLine("  /** <code>reduce_goto</code> table. */");
-			out_Renamed.Write("  private static String[] _strGotoTable = ");
+			out_Renamed.Write("  private static string[] _strGotoTable = ");
 			do_table_as_string(out_Renamed, reduce_goto_table);
 			out_Renamed.WriteLine(";");
 			out_Renamed.WriteLine("  protected static readonly short[][] _reduce_table = CUP.runtime.lr_parser.unpackFromStrings(_strGotoTable);");
@@ -744,7 +778,7 @@ namespace CUP
 		// print a string array encoding the given short[][] array.
 		protected internal static void  do_table_as_string(System.IO.StreamWriter out_Renamed, short[][] sa)
 		{
-			out_Renamed.WriteLine("new String[] {");
+			out_Renamed.WriteLine("new string[] {");
 			out_Renamed.Write("    \"");
 			int nchar = 0, nbytes = 0;
 			nbytes += do_escaped(out_Renamed, (char) (sa.Length >> 16));

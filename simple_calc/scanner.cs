@@ -1,9 +1,11 @@
+using System;
+using Symbol = CUP.runtime.Symbol;
+using Scanner = CUP.runtime.Scanner;
+using System.Text;
+
 // Simple Example Scanner Class
 namespace simple_calc
 {
-	using System;
-	using Symbol = CUP.runtime.Symbol;
-	using Scanner = CUP.runtime.Scanner;
 	
 	public class scanner : Scanner
 	{
@@ -38,19 +40,18 @@ namespace simple_calc
 			 for (; ; )
 				switch (next_char)
 				{
-					case '0': case '1': case '2': case '3': case '4': case '5': case '6': case '7': case '8': case '9': 
+					case '0': case '1': case '2': case '3': case '4': case '5': case '6': case '7': case '8': case '9': case '.':
 						/* parse a decimal integer */
-						int i_val = 0;
+                        StringBuilder sb = new StringBuilder();
+						decimal d_val = 0;
 						do 
 						{
-							i_val = i_val * 10 + (next_char - '0');
+                            sb.Append((char)next_char);
 							advance();
 						}
-						while (next_char >= '0' && next_char <= '9');
-						return new Symbol(sym.NUMBER, i_val);
-						
-					
-					
+						while ((next_char >= '0' && next_char <= '9') || next_char == '.');
+                        d_val = decimal.Parse(sb.ToString());
+						return new Symbol(sym.REAL, d_val);
 					case ';': 
 						advance(); return new Symbol(sym.SEMI);
 					

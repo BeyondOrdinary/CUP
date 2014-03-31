@@ -28,7 +28,7 @@ namespace CUP
 		/// <param name="action_str">the trailing reduce action for this production.
 		/// 
 		/// </param>
-		public action_production(production base_Renamed, non_terminal lhs_sym, production_part[] rhs_parts, int rhs_len, System.String action_str):base(lhs_sym, rhs_parts, rhs_len, action_str)
+		public action_production(production base_Renamed, non_terminal lhs_sym, production_part[] rhs_parts, int rhs_len, string action_str):base(lhs_sym, rhs_parts, rhs_len, action_str)
 		{
 			_base_production = base_Renamed;
 		}

@@ -84,7 +84,7 @@ namespace CUP
 		
 		/// <summary>Generic equality test. 
 		/// </summary>
-		public  override bool Equals(System.Object other)
+		public  override bool Equals(object other)
 		{
 			if (other is parse_action)
 				return equals((parse_action) other);
@@ -105,7 +105,7 @@ namespace CUP
 		
 		/// <summary>Convert to string. 
 		/// </summary>
-		public override System.String ToString()
+		public override string ToString()
 		{
 			return "ERROR";
 		}

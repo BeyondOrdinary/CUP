@@ -183,7 +183,7 @@ namespace CUP
 		/// 
 		/// </param>
 		[STAThread]
-		public static void  Main(System.String[] argv)
+		public static void  Main(string[] argv)
 		{
 			try 
 			{
@@ -293,7 +293,7 @@ namespace CUP
 		/// <param name="message">a specific error message to preface the usage message by.
 		/// 
 		/// </param>
-		protected internal static void  usage(System.String message)
+		protected internal static void  usage(string message)
 		{
 			System.Console.Error.WriteLine();
 			System.Console.Error.WriteLine(message);
@@ -310,7 +310,7 @@ namespace CUP
 		/// <param name="argv">the command line arguments to be parsed.
 		/// 
 		/// </param>
-		protected internal static void  parse_args(System.String[] argv)
+		protected internal static void  parse_args(string[] argv)
 		{
 			int len = argv.Length;
 			int i;
@@ -674,7 +674,7 @@ namespace CUP
 		/// <param name="val">the numerical value determining plurality.
 		/// 
 		/// </param>
-		protected internal static System.String plural(int val)
+		protected internal static string plural(int val)
 		{
 			if (val == 1)
 				return "";
@@ -789,7 +789,7 @@ namespace CUP
 		/// <param name="total_time">total time percentages are calculated against (in ms).
 		/// 
 		/// </param>
-		protected internal static System.String timestr(long time_val, long total_time)
+		protected internal static string timestr(long time_val, long total_time)
 		{
 			bool neg;
 			long ms = 0;

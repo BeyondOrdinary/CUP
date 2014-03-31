@@ -33,7 +33,7 @@ namespace CUP
 		/// <param name="tp"> the type string for the non terminal.
 		/// 
 		/// </param>
-		public non_terminal(System.String nm, System.String tp):base(nm, tp)
+		public non_terminal(string nm, string tp):base(nm, tp)
 		{
 			InitBlock();
 			
@@ -56,7 +56,7 @@ namespace CUP
 		/// <param name="nm"> the name of the non terminal.
 		/// 
 		/// </param>
-		public non_terminal(System.String nm):this(nm, null)
+		public non_terminal(string nm):this(nm, null)
 		{
 			InitBlock();
 		}
@@ -79,7 +79,7 @@ namespace CUP
 		
 		/// <summary>lookup a non terminal by name string 
 		/// </summary>
-		public static non_terminal find(System.String with_name)
+		public static non_terminal find(string with_name)
 		{
 			if (with_name == null)
 				return null;
@@ -146,7 +146,7 @@ namespace CUP
 		/// <param name="prefix">base name to construct unique name from. 
 		/// 
 		/// </param>
-		internal static non_terminal create_new(System.String prefix)
+		internal static non_terminal create_new(string prefix)
 		{
 			if (prefix == null)
 				prefix = "NT$";
@@ -350,7 +350,7 @@ namespace CUP
 		
 		/// <summary>convert to string 
 		/// </summary>
-		public override System.String ToString()
+		public override string ToString()
 		{
 			//UPGRADE_TODO: The equivalent in .NET for method 'java.Object.toString' may return a different value. 'ms-help://MS.VSCC/commoner/redir/redirect.htm?keyword="jlca1043"'
 			return base.ToString() + "[" + index() + "]" + (nullable()?"*":"");

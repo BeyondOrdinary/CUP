@@ -45,25 +45,25 @@ namespace CUP
 		/// <summary>String for the current version. 
 		/// </summary>
 		//UPGRADE_NOTE: Final was removed from the declaration of 'version_str '. 'ms-help://MS.VSCC/commoner/redir/redirect.htm?keyword="jlca1003"'
-		public static readonly System.String version_str = "v" + major + "." + minor + update;
+		public static readonly string version_str = "v" + major + "." + minor + update;
 		
 		/*. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .*/
 		
 		/// <summary>Full title of the system 
 		/// </summary>
 		//UPGRADE_NOTE: Final was removed from the declaration of 'title_str '. 'ms-help://MS.VSCC/commoner/redir/redirect.htm?keyword="jlca1003"'
-		public static readonly System.String title_str = "CUP " + version_str;
+		public static readonly string title_str = "CUP " + version_str;
 		
 		/*. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .*/
 		
 		/// <summary>Name of the author 
 		/// </summary>
-		public const System.String author_str = "Scott E. Hudson, Frank Flannery, and C. Scott Ananian";
+		public const string author_str = "Scott E. Hudson, Frank Flannery, and C. Scott Ananian";
 		
 		/*. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .*/
 		
 		/// <summary>The command name normally used to invoke this program 
 		/// </summary>
-		public const System.String program_name = "java_cup";
+		public const string program_name = "java_cup";
 	}
 }

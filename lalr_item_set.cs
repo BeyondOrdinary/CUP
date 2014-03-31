@@ -274,7 +274,7 @@ namespace CUP
 		/// <param name="obj">the object we are testing.
 		/// 
 		/// </param>
-		protected internal virtual void  not_null(System.Object obj)
+		protected internal virtual void  not_null(object obj)
 		{
 			if (obj == null)
 				throw new internal_error("Null object used in set operation");
@@ -385,7 +385,7 @@ namespace CUP
 		
 		/// <summary>Generic equality comparison. 
 		/// </summary>
-		public  override bool Equals(System.Object other)
+		public  override bool Equals(object other)
 		{
 			if (!(other is lalr_item_set))
 				return false;
@@ -404,7 +404,7 @@ namespace CUP
 			int cnt;
 			
 			/* only compute a new one if we don't have it cached */
-			if ((System.Object) hashcode_cache == null)
+			if ((object) hashcode_cache == null)
 			{
 				/* hash together codes from at most first 5 elements */
 				//   CSA fix! we'd *like* to hash just a few elements, but
@@ -427,7 +427,7 @@ namespace CUP
 		
 		/// <summary>Convert to string. 
 		/// </summary>
-		public override System.String ToString()
+		public override string ToString()
 		{
 			System.Text.StringBuilder result = new System.Text.StringBuilder();
 			

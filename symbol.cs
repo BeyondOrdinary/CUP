@@ -33,7 +33,7 @@ namespace CUP
 		/// <param name="tp">a string with the type name.
 		/// 
 		/// </param>
-		public symbol(System.String nm, System.String tp)
+		public symbol(string nm, string tp)
 		{
 			/* sanity check */
 			if (nm == null)
@@ -54,7 +54,7 @@ namespace CUP
 		/// <param name="nm">the name of the symbol.
 		/// 
 		/// </param>
-		public symbol(System.String nm):this(nm, null)
+		public symbol(string nm):this(nm, null)
 		{
 		}
 		
@@ -64,12 +64,12 @@ namespace CUP
 		
 		/// <summary>String for the human readable name of the symbol. 
 		/// </summary>
-		protected System.String _name;
+		protected string _name;
 		
 		/// <summary>String for the human readable name of the symbol. 
 		/// </summary>
 		//UPGRADE_NOTE: Method name was renamed. 'ms-help://MS.VSCC/commoner/redir/redirect.htm?keyword="jlca1029"'
-		public virtual System.String name_Renamed_Method()
+		public virtual string name_Renamed_Method()
 		{
 			return _name;
 		}
@@ -78,11 +78,11 @@ namespace CUP
 		
 		/// <summary>String for the type of object used for the symbol on the parse stack. 
 		/// </summary>
-		protected System.String _stack_type;
+		protected string _stack_type;
 		
 		/// <summary>String for the type of object used for the symbol on the parse stack. 
 		/// </summary>
-		public virtual System.String stack_type()
+		public virtual string stack_type()
 		{
 			return _stack_type;
 		}
@@ -135,7 +135,7 @@ namespace CUP
 		
 		/// <summary>Convert to a string. 
 		/// </summary>
-		public override System.String ToString()
+		public override string ToString()
 		{
 			return name_Renamed_Method();
 		}

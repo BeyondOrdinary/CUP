@@ -62,7 +62,7 @@ namespace CUP
 		/// all actions at the end where they can be handled as part of a reduce by
 		/// the parser.
 		/// </summary>
-		public production(non_terminal lhs_sym, production_part[] rhs_parts, int rhs_l, System.String action_str)
+		public production(non_terminal lhs_sym, production_part[] rhs_parts, int rhs_l, string action_str)
 		{
 			InitBlock();
 			int i;
@@ -183,7 +183,7 @@ namespace CUP
 		
 		/* Constructor with precedence and associativity of production
 		contextually define */
-		public production(non_terminal lhs_sym, production_part[] rhs_parts, int rhs_l, System.String action_str, int prec_num, int prec_side):this(lhs_sym, rhs_parts, rhs_l, action_str)
+		public production(non_terminal lhs_sym, production_part[] rhs_parts, int rhs_l, string action_str, int prec_num, int prec_side):this(lhs_sym, rhs_parts, rhs_l, action_str)
 		{
 			InitBlock();
 			
@@ -447,7 +447,7 @@ namespace CUP
 		/// <author> frankf
 		/// 
 		/// </author>
-		protected internal virtual System.String make_declaration(System.String labelname, System.String stack_type, int offset)
+		protected internal virtual string make_declaration(string labelname, string stack_type, int offset)
 		{
 			System.String ret;
 			
@@ -474,7 +474,7 @@ namespace CUP
 		/// <param name="lhs_type">    the object type associated with the LHS symbol.
 		/// 
 		/// </param>
-		protected internal virtual System.String declare_labels(production_part[] rhs, int rhs_len, System.String final_action)
+		protected internal virtual string declare_labels(production_part[] rhs, int rhs_len, string final_action)
 		{
 			System.String declaration = "";
 			
@@ -746,7 +746,7 @@ namespace CUP
 		
 		/// <summary>Generic equality comparison. 
 		/// </summary>
-		public  override bool Equals(System.Object other)
+		public  override bool Equals(object other)
 		{
 			if (!(other is production))
 				return false;
@@ -768,7 +768,7 @@ namespace CUP
 		
 		/// <summary>Convert to a string. 
 		/// </summary>
-		public override System.String ToString()
+		public override string ToString()
 		{
 			System.String result;
 			
@@ -806,7 +806,7 @@ namespace CUP
 		
 		/// <summary>Convert to a simpler string. 
 		/// </summary>
-		public virtual System.String to_simple_string()
+		public virtual string to_simple_string()
 		{
 			System.String result;
 			

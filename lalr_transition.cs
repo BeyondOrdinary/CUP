@@ -106,7 +106,7 @@ namespace CUP
 		
 		/// <summary>Convert to a string. 
 		/// </summary>
-		public override System.String ToString()
+		public override string ToString()
 		{
 			System.String result;
 			

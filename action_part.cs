@@ -29,7 +29,7 @@ namespace CUP
 		/// <param name="code_str">string containing the actual user code.
 		/// 
 		/// </param>
-		public action_part(System.String code_str):base(null)
+		public action_part(string code_str):base(null)
 		{
 			_code_string = code_str;
 		}
@@ -40,13 +40,13 @@ namespace CUP
 		
 		/// <summary>String containing code for the action in question. 
 		/// </summary>
-		protected System.String _code_string;
+		protected string _code_string;
 		
 		/*. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .*/
 		
 		/// <summary>String containing code for the action in question. 
 		/// </summary>
-		public virtual System.String code_string()
+		public virtual string code_string()
 		{
 			return _code_string;
 		}
@@ -55,7 +55,7 @@ namespace CUP
 		
 		/// <summary>Set the code string. 
 		/// </summary>
-		public virtual void  set_code_string(System.String new_str)
+		public virtual void  set_code_string(string new_str)
 		{
 			_code_string = new_str;
 		}
@@ -85,7 +85,7 @@ namespace CUP
 		
 		/// <summary>Generic equality comparison. 
 		/// </summary>
-		public  override bool Equals(System.Object other)
+		public  override bool Equals(object other)
 		{
 			if (!(other is action_part))
 				return false;
@@ -106,7 +106,7 @@ namespace CUP
 		
 		/// <summary>Convert to a string.  
 		/// </summary>
-		public override System.String ToString()
+		public override string ToString()
 		{
 			//UPGRADE_TODO: The equivalent in .NET for method 'java.Object.toString' may return a different value. 'ms-help://MS.VSCC/commoner/redir/redirect.htm?keyword="jlca1043"'
 			return base.ToString() + "{" + code_string() + "}";

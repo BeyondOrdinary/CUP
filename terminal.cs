@@ -28,7 +28,7 @@ namespace CUP
 		/// <param name="tp">the type of the terminal.
 		/// 
 		/// </param>
-		public terminal(System.String nm, System.String tp, int precedence_side, int precedence_num):base(nm, tp)
+		public terminal(string nm, string tp, int precedence_side, int precedence_num):base(nm, tp)
 		{
 			
 			/* add to set of all terminals and check for duplicates */
@@ -52,7 +52,7 @@ namespace CUP
 		/// <summary>Constructor for non-precedented terminal
 		/// </summary>
 		
-		public terminal(System.String nm, System.String tp):this(nm, tp, assoc.no_prec, - 1)
+		public terminal(string nm, string tp):this(nm, tp, assoc.no_prec, - 1)
 		{
 		}
 		
@@ -63,7 +63,7 @@ namespace CUP
 		/// <param name="nm">the name of the terminal.
 		/// 
 		/// </param>
-		public terminal(System.String nm):this(nm, null)
+		public terminal(string nm):this(nm, null)
 		{
 		}
 		
@@ -92,7 +92,7 @@ namespace CUP
 		
 		/// <summary>Lookup a terminal by name string. 
 		/// </summary>
-		public static terminal find(System.String with_name)
+		public static terminal find(string with_name)
 		{
 			if (with_name == null)
 				return null;
@@ -160,7 +160,7 @@ namespace CUP
 		
 		/// <summary>Convert to a string. 
 		/// </summary>
-		public override System.String ToString()
+		public override string ToString()
 		{
 			//UPGRADE_TODO: The equivalent in .NET for method 'java.Object.toString' may return a different value. 'ms-help://MS.VSCC/commoner/redir/redirect.htm?keyword="jlca1043"'
 			return base.ToString() + "[" + index() + "]";

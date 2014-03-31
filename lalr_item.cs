@@ -302,7 +302,7 @@ namespace CUP
 		
 		/// <summary>Generic equality comparison. 
 		/// </summary>
-		public  override bool Equals(System.Object other)
+		public  override bool Equals(object other)
 		{
 			if (!(other is lalr_item))
 				return false;
@@ -324,7 +324,7 @@ namespace CUP
 		
 		/// <summary>Convert to string. 
 		/// </summary>
-		public override System.String ToString()
+		public override string ToString()
 		{
 			System.String result = "";
 			

@@ -262,7 +262,7 @@ namespace CUP
 		/// <param name="message">the message to print.
 		/// 
 		/// </param>
-		public static void  emit_error(System.String message)
+		public static void  emit_error(string message)
 		{
 			System.Console.Error.WriteLine("Error at " + current_line + "(" + current_position + "): " + message);
 			error_count++;
@@ -277,7 +277,7 @@ namespace CUP
 		/// <param name="message">the message to print.
 		/// 
 		/// </param>
-		public static void  emit_warn(System.String message)
+		public static void  emit_warn(string message)
 		{
 			System.Console.Error.WriteLine("Warning at " + current_line + "(" + current_position + "): " + message);
 			warning_count++;

@@ -8,7 +8,7 @@ public class SupportClass
 	}
 
 	/*******************************/
-	public static System.Object PutElement(System.Collections.Hashtable hashTable, System.Object key, System.Object newValue)
+	public static object PutElement(System.Collections.Hashtable hashTable, object key, object newValue)
 	{
 		System.Object element = hashTable[key];
 		hashTable[key] = newValue;

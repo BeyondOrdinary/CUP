@@ -396,7 +396,7 @@ namespace CUP.runtime
 		/// <param name="info">   an extra object reserved for use by specialized subclasses.
 		/// 
 		/// </param>
-		public virtual void  report_fatal_error(System.String message, System.Object info)
+		public virtual void  report_fatal_error(string message, object info)
 		{
 			/* stop parsing (not really necessary since we throw an exception, but) */
 			done_parsing();
@@ -422,7 +422,7 @@ namespace CUP.runtime
 		/// <param name="info">   an extra object reserved for use by specialized subclasses.
 		/// 
 		/// </param>
-		public virtual void  report_error(System.String message, System.Object info)
+		public virtual void  report_error(string message, object info)
 		{
 			System.Console.Error.Write(message);
 			if (info is Symbol)
@@ -687,7 +687,7 @@ namespace CUP.runtime
 		/// <param name="mess">the text of the debugging message.
 		/// 
 		/// </param>
-		public virtual void  debug_message(System.String mess)
+		public virtual void  debug_message(string mess)
 		{
 #if DEBUG
             Debug.WriteLine("CUP: " + mess);

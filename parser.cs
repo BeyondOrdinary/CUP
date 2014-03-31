@@ -16,9 +16,9 @@ namespace CUP
 	{
 		private void  InitBlock()
 		{
-			_production_table = unpackFromStrings(new System.String[]{"\x0000\x006B\x0000\x0002\x0002\x0004\x0000\x0002\x002D\x0002\x0000\x0002\x0003" + "\x000A\x0000\x0002\x0003\x0007\x0000\x0002\x002E\x0002\x0000\x0002\x0004\x0006" + "\x0000\x0002\x0004\x0003\x0000\x0002\x0005\x0004\x0000\x0002\x0005\x0003\x0000" + "\x0002\x002F\x0002\x0000\x0002\x0010\x0006\x0000\x0002\x0008\x0003\x0000\x0002" + "\x0008\x0003\x0000\x0002\x0008\x0003\x0000\x0002\x0008\x0003\x0000\x0002\x0007" + "\x0002\x0000\x0002\x0007\x0004\x0000\x0002\x0006\x0006\x0000\x0002\x000B\x0006" + "\x0000\x0002\x0012\x0006\x0000\x0002\x0013\x0006\x0000\x0002\x000C\x0004\x0000" + "\x0002\x000C\x0003\x0000\x0002\x0014\x0005\x0000\x0002\x0014\x0004\x0000\x0002" + "\x0014\x0005\x0000\x0002\x0014\x0004\x0000\x0002\x0030\x0002\x0000\x0002\x0014" + "\x0006\x0000\x0002\x0031\x0002\x0000\x0002\x0014\x0006\x0000\x0002\x0032\x0002" + "\x0000\x0002\x0024\x0005\x0000\x0002\x0033\x0002\x0000\x0002\x0025\x0005\x0000" + "\x0002\x0016\x0005\x0000\x0002\x0016\x0003\x0000\x0002\x0017\x0005\x0000\x0002" + "\x0017\x0003\x0000\x0002\x0020\x0003\x0000\x0002\x0020\x0003\x0000\x0002\x0023" + "\x0004\x0000\x0002\x0023\x0003\x0000\x0002\x0034\x0002\x0000\x0002\x0021\x0007" + "\x0000\x0002\x0035\x0002\x0000\x0002\x0021\x0007\x0000\x0002\x0036\x0002\x0000" + "\x0002\x0021\x0007\x0000\x0002\x0022\x0005\x0000\x0002\x0022\x0003\x0000\x0002" + "\x002A\x0003\x0000\x0002\x002B\x0003\x0000\x0002\x0037\x0002\x0000\x0002\x000D" + "\x0007\x0000\x0002\x000D\x0003\x0000\x0002\x000E\x0004\x0000\x0002\x000E\x0003" + "\x0000\x0002\x0038\x0002\x0000\x0002\x0039\x0002\x0000\x0002\x0018\x0008\x0000" + "\x0002\x003A\x0002\x0000\x0002\x0018\x0005\x0000\x0002\x001D\x0005\x0000\x0002" + "\x001D\x0003\x0000\x0002\x001E\x0005\x0000\x0002\x001E\x0003\x0000\x0002\x0019" + "\x0004\x0000\x0002\x0019\x0003\x0000\x0002\x001A\x0004\x0000\x0002\x001A\x0003" + "\x0000\x0002\x0029\x0004\x0000\x0002\x0029\x0003\x0000\x0002\x000F\x0005\x0000" + 
+			_production_table = unpackFromStrings(new string[]{"\x0000\x006B\x0000\x0002\x0002\x0004\x0000\x0002\x002D\x0002\x0000\x0002\x0003" + "\x000A\x0000\x0002\x0003\x0007\x0000\x0002\x002E\x0002\x0000\x0002\x0004\x0006" + "\x0000\x0002\x0004\x0003\x0000\x0002\x0005\x0004\x0000\x0002\x0005\x0003\x0000" + "\x0002\x002F\x0002\x0000\x0002\x0010\x0006\x0000\x0002\x0008\x0003\x0000\x0002" + "\x0008\x0003\x0000\x0002\x0008\x0003\x0000\x0002\x0008\x0003\x0000\x0002\x0007" + "\x0002\x0000\x0002\x0007\x0004\x0000\x0002\x0006\x0006\x0000\x0002\x000B\x0006" + "\x0000\x0002\x0012\x0006\x0000\x0002\x0013\x0006\x0000\x0002\x000C\x0004\x0000" + "\x0002\x000C\x0003\x0000\x0002\x0014\x0005\x0000\x0002\x0014\x0004\x0000\x0002" + "\x0014\x0005\x0000\x0002\x0014\x0004\x0000\x0002\x0030\x0002\x0000\x0002\x0014" + "\x0006\x0000\x0002\x0031\x0002\x0000\x0002\x0014\x0006\x0000\x0002\x0032\x0002" + "\x0000\x0002\x0024\x0005\x0000\x0002\x0033\x0002\x0000\x0002\x0025\x0005\x0000" + "\x0002\x0016\x0005\x0000\x0002\x0016\x0003\x0000\x0002\x0017\x0005\x0000\x0002" + "\x0017\x0003\x0000\x0002\x0020\x0003\x0000\x0002\x0020\x0003\x0000\x0002\x0023" + "\x0004\x0000\x0002\x0023\x0003\x0000\x0002\x0034\x0002\x0000\x0002\x0021\x0007" + "\x0000\x0002\x0035\x0002\x0000\x0002\x0021\x0007\x0000\x0002\x0036\x0002\x0000" + "\x0002\x0021\x0007\x0000\x0002\x0022\x0005\x0000\x0002\x0022\x0003\x0000\x0002" + "\x002A\x0003\x0000\x0002\x002B\x0003\x0000\x0002\x0037\x0002\x0000\x0002\x000D" + "\x0007\x0000\x0002\x000D\x0003\x0000\x0002\x000E\x0004\x0000\x0002\x000E\x0003" + "\x0000\x0002\x0038\x0002\x0000\x0002\x0039\x0002\x0000\x0002\x0018\x0008\x0000" + "\x0002\x003A\x0002\x0000\x0002\x0018\x0005\x0000\x0002\x001D\x0005\x0000\x0002" + "\x001D\x0003\x0000\x0002\x001E\x0005\x0000\x0002\x001E\x0003\x0000\x0002\x0019" + "\x0004\x0000\x0002\x0019\x0003\x0000\x0002\x001A\x0004\x0000\x0002\x001A\x0003" + "\x0000\x0002\x0029\x0004\x0000\x0002\x0029\x0003\x0000\x0002\x000F\x0005\x0000" + 
 				"\x0002\x000F\x0003\x0000\x0002\x0011\x0005\x0000\x0002\x0011\x0003\x0000\x0002" + "\x0015\x0003\x0000\x0002\x0015\x0005\x0000\x0002\x001B\x0003\x0000\x0002\x001C" + "\x0003\x0000\x0002\x0026\x0003\x0000\x0002\x0026\x0003\x0000\x0002\x0027\x0003" + "\x0000\x0002\x0027\x0003\x0000\x0002\x0028\x0003\x0000\x0002\x002C\x0003\x0000" + "\x0002\x002C\x0003\x0000\x0002\x002C\x0003\x0000\x0002\x002C\x0003\x0000\x0002" + "\x002C\x0003\x0000\x0002\x002C\x0003\x0000\x0002\x002C\x0003\x0000\x0002\x002C" + "\x0003\x0000\x0002\x002C\x0003\x0000\x0002\x002C\x0003\x0000\x0002\x002C\x0003" + "\x0000\x0002\x002C\x0003\x0000\x0002\x002C\x0003\x0000\x0002\x002C\x0003\x0000" + "\x0002\x002C\x0003\x0000\x0002\x002C\x0003\x0000\x0002\x000A\x0004\x0000\x0002" + "\x000A\x0003\x0000\x0002\x0009\x0002\x0000\x0002\x0009\x0003\x0000\x0002\x001F" + "\x0002"});
-			_action_table = unpackFromStrings(new System.String[]{"\x0000\x00A7\x0000\x0016\x0003\x0006\x0004\x0000\x0005\x0000\x0007\x0000\x0008" + "\x0000\x0009\x0000\x000A\x0000\x000B\x0000\x000C\x0000\x001D\x0000\x0001\x0002" + "\x0000\x0004\x0002\x00A9\x0001\x0002\x0000\x0014\x0004\x0080\x0005\uff97\x0007" + "\uff97\x0008\uff97\x0009\uff97\x000A\uff97\x000B\uff97\x000C\uff97\x001D\uff97" + "\x0001\x0002\x0000\x0008\x0009\x0007\x000A\x000A\x001D\x000C\x0001\x0002\x0000" + "\x0022\x0003\x0073\x0006\x0016\x0007\x0017\x0008\x0020\x0009\x001E\x000A\x0012" + "\x000B\x0022\x000C\x0018\x000D\x000F\x000E\x000D\x0016\x001B\x0017\x0013\x0018" + "\x001D\x0019\x0021\x001D\x0015\x001E\x0070\x0001\x0002\x0000\x0010\x0003\uffeb" + "\x0009\uffeb\x000A\uffeb\x000E\uffeb\x0016\uffeb\x001D\uffeb\x001E\uffeb\x0001" + "\x0002\x0000\x0010\x0003\uff97\x0009\x0007\x000A\x000A\x000E\uff97\x0016\x0035" + "\x001D\x000C\x001E\uff97\x0001\x0002\x0000\x0004\x0009\x0031\x0001\x0002\x0000" + "\x0022\x0003\x001C\x0006\x0016\x0007\x0017\x0008\x0020\x0009\x001E\x000A\x0012" + "\x000B\x0022\x000C\x0018\x000D\x000F\x000E\x000D\x0016\x001B\x0017\x0013\x0018" + "\x001D\x0019\x0021\x001D\x0015\x001E\x000E\x0001\x0002\x0000\x0022\x0003\uff9a" + "\x0006\uff9a\x0007\uff9a\x0008\uff9a\x0009\uff9a\x000A\uff9a\x000B\uff9a\x000C" + "\uff9a\x000D\uff9a\x000E\uff9a\x0016\uff9a\x0017\uff9a\x0018\uff9a\x0019\uff9a" + "\x001D\uff9a\x001E\uff9a\x0001\x0002\x0000\x0012\x0003\uffa1\x000F\uffa1\x0012" + "\uffa1\x0015\uffa1\x001A\uffa1\x001B\uffa1\x001E\uffa1\x001F\uffa1\x0001\x0002" + "\x0000\x000C\x000F\uffb1\x0010\uffb1\x0012\uffab\x001B\uffab\x001E\uffab\x0001" + "\x0002\x0000\x0012\x0003\uffa2\x000F\uffa2\x0012\uffa2\x0015\uffa2\x001A\uffa2" + "\x001B\uffa2\x001E\uffa2\x001F\uffa2\x0001\x0002\x0000\x0006\x000F\uffe0\x0010" + "\x002D\x0001\x0002\x0000\x0008\x0012\x0029\x001B\uffb4\x001E\uffb4\x0001\x0002" + "\x0000\x0012\x0003\uffa6\x000F\uffa6\x0012\uffa6\x0015\uffa6\x001A\uffa6\x001B" + 
+			_action_table = unpackFromStrings(new string[]{"\x0000\x00A7\x0000\x0016\x0003\x0006\x0004\x0000\x0005\x0000\x0007\x0000\x0008" + "\x0000\x0009\x0000\x000A\x0000\x000B\x0000\x000C\x0000\x001D\x0000\x0001\x0002" + "\x0000\x0004\x0002\x00A9\x0001\x0002\x0000\x0014\x0004\x0080\x0005\uff97\x0007" + "\uff97\x0008\uff97\x0009\uff97\x000A\uff97\x000B\uff97\x000C\uff97\x001D\uff97" + "\x0001\x0002\x0000\x0008\x0009\x0007\x000A\x000A\x001D\x000C\x0001\x0002\x0000" + "\x0022\x0003\x0073\x0006\x0016\x0007\x0017\x0008\x0020\x0009\x001E\x000A\x0012" + "\x000B\x0022\x000C\x0018\x000D\x000F\x000E\x000D\x0016\x001B\x0017\x0013\x0018" + "\x001D\x0019\x0021\x001D\x0015\x001E\x0070\x0001\x0002\x0000\x0010\x0003\uffeb" + "\x0009\uffeb\x000A\uffeb\x000E\uffeb\x0016\uffeb\x001D\uffeb\x001E\uffeb\x0001" + "\x0002\x0000\x0010\x0003\uff97\x0009\x0007\x000A\x000A\x000E\uff97\x0016\x0035" + "\x001D\x000C\x001E\uff97\x0001\x0002\x0000\x0004\x0009\x0031\x0001\x0002\x0000" + "\x0022\x0003\x001C\x0006\x0016\x0007\x0017\x0008\x0020\x0009\x001E\x000A\x0012" + "\x000B\x0022\x000C\x0018\x000D\x000F\x000E\x000D\x0016\x001B\x0017\x0013\x0018" + "\x001D\x0019\x0021\x001D\x0015\x001E\x000E\x0001\x0002\x0000\x0022\x0003\uff9a" + "\x0006\uff9a\x0007\uff9a\x0008\uff9a\x0009\uff9a\x000A\uff9a\x000B\uff9a\x000C" + "\uff9a\x000D\uff9a\x000E\uff9a\x0016\uff9a\x0017\uff9a\x0018\uff9a\x0019\uff9a" + "\x001D\uff9a\x001E\uff9a\x0001\x0002\x0000\x0012\x0003\uffa1\x000F\uffa1\x0012" + "\uffa1\x0015\uffa1\x001A\uffa1\x001B\uffa1\x001E\uffa1\x001F\uffa1\x0001\x0002" + "\x0000\x000C\x000F\uffb1\x0010\uffb1\x0012\uffab\x001B\uffab\x001E\uffab\x0001" + "\x0002\x0000\x0012\x0003\uffa2\x000F\uffa2\x0012\uffa2\x0015\uffa2\x001A\uffa2" + "\x001B\uffa2\x001E\uffa2\x001F\uffa2\x0001\x0002\x0000\x0006\x000F\uffe0\x0010" + "\x002D\x0001\x0002\x0000\x0008\x0012\x0029\x001B\uffb4\x001E\uffb4\x0001\x0002" + "\x0000\x0012\x0003\uffa6\x000F\uffa6\x0012\uffa6\x0015\uffa6\x001A\uffa6\x001B" + 
 				"\uffa6\x001E\uffa6\x001F\uffa6\x0001\x0002\x0000\x0012\x0003\uff9f\x000F\uff9f" + "\x0012\uff9f\x0015\uff9f\x001A\uff9f\x001B\uff9f\x001E\uff9f\x001F\uff9f\x0001" + "\x0002\x0000\x0006\x001B\x0027\x001E\x0025\x0001\x0002\x0000\x0012\x0003\uffa5" + "\x000F\uffa5\x0012\uffa5\x0015\uffa5\x001A\uffa5\x001B\uffa5\x001E\uffa5\x001F" + "\uffa5\x0001\x0002\x0000\x0012\x0003\uffaa\x000F\uffaa\x0012\uffaa\x0015\uffaa" + "\x001A\uffaa\x001B\uffaa\x001E\uffaa\x001F\uffaa\x0001\x0002\x0000\x0012\x0003" + "\uffa9\x000F\uffa9\x0012\uffa9\x0015\uffa9\x001A\uffa9\x001B\uffa9\x001E\uffa9" + "\x001F\uffa9\x0001\x0002\x0000\x0012\x0003\uffa3\x000F\uffa3\x0012\uffa3\x0015" + "\uffa3\x001A\uffa3\x001B\uffa3\x001E\uffa3\x001F\uffa3\x0001\x0002\x0000\x000A" + "\x000F\uffb7\x0012\uffb7\x001B\uffb7\x001E\uffb7\x0001\x0002\x0000\x0010\x0003" + "\uffe7\x0009\uffe7\x000A\uffe7\x000E\uffe7\x0016\uffe7\x001D\uffe7\x001E\uffe7" + "\x0001\x0002\x0000\x0012\x0003\uffa0\x000F\uffa0\x0012\uffa0\x0015\uffa0\x001A" + "\uffa0\x001B\uffa0\x001E\uffa0\x001F\uffa0\x0001\x0002\x0000\x000A\x000F\uffe4" + "\x0012\uff9c\x001B\uff9c\x001E\uff9c\x0001\x0002\x0000\x0012\x0003\uff9e\x000F" + "\uff9e\x0012\uff9e\x0015\uff9e\x001A\uff9e\x001B\uff9e\x001E\uff9e\x001F\uff9e" + "\x0001\x0002\x0000\x0012\x0003\uffa7\x000F\uffa7\x0012\uffa7\x0015\uffa7\x001A" + "\uffa7\x001B\uffa7\x001E\uffa7\x001F\uffa7\x0001\x0002\x0000\x0006\x000F\uffdb" + "\x0010\uffdb\x0001\x0002\x0000\x0012\x0003\uffa8\x000F\uffa8\x0012\uffa8\x0015" + "\uffa8\x001A\uffa8\x001B\uffa8\x001E\uffa8\x001F\uffa8\x0001\x0002\x0000\x0012" + "\x0003\uff9d\x000F\uff9d\x0012\uff9d\x0015\uff9d\x001A\uff9d\x001B\uff9d\x001E" + "\uff9d\x001F\uff9d\x0001\x0002\x0000\x0012\x0003\uffa4\x000F\uffa4\x0012\uffa4" + "\x0015\uffa4\x001A\uffa4\x001B\uffa4\x001E\uffa4\x001F\uffa4\x0001\x0002\x0000" + "\x0004\x000F\x0024\x0001\x0002\x0000\x0010\x0003\uffe3\x0009\uffe3\x000A\uffe3" + "\x000E\uffe3\x0016\uffe3\x001D\uffe3\x001E\uffe3\x0001\x0002\x0000\x0006\x000F" + 
 				"\uffb1\x0010\uffb1\x0001\x0002\x0000\x0010\x0003\uffe8\x0009\uffe8\x000A\uffe8" + "\x000E\uffe8\x0016\uffe8\x001D\uffe8\x001E\uffe8\x0001\x0002\x0000\x0004\x001C" + "\x0028\x0001\x0002\x0000\x0006\x001B\uffb3\x001E\uffb3\x0001\x0002\x0000\x0022" + "\x0003\x002C\x0006\x0016\x0007\x0017\x0008\x0020\x0009\x001E\x000A\x0012\x000B" + "\x0022\x000C\x0018\x000D\x000F\x000E\x000D\x0016\x001B\x0017\x0013\x0018\x001D" + "\x0019\x0021\x001D\x0015\x001E\x002B\x0001\x0002\x0000\x000A\x000F\uffb8\x0012" + "\uffb8\x001B\uffb8\x001E\uffb8\x0001\x0002\x0000\x0012\x0003\uffab\x000F\uffab" + "\x0012\uffab\x0015\uffab\x001A\uffab\x001B\uffab\x001E\uffab\x001F\uffab\x0001" + "\x0002\x0000\x0012\x0003\uff9c\x000F\uff9c\x0012\uff9c\x0015\uff9c\x001A\uff9c" + "\x001B\uff9c\x001E\uff9c\x001F\uff9c\x0001\x0002\x0000\x0004\x001E\x0025\x0001" + "\x0002\x0000\x0004\x000F\x002F\x0001\x0002\x0000\x0010\x0003\uffdf\x0009\uffdf" + "\x000A\uffdf\x000E\uffdf\x0016\uffdf\x001D\uffdf\x001E\uffdf\x0001\x0002\x0000" + "\x0006\x000F\uffdc\x0010\uffdc\x0001\x0002\x0000\x0022\x0003\uff9b\x0006\uff9b" + "\x0007\uff9b\x0008\uff9b\x0009\uff9b\x000A\uff9b\x000B\uff9b\x000C\uff9b\x000D" + "\uff9b\x000E\uff9b\x0016\uff9b\x0017\uff9b\x0018\uff9b\x0019\uff9b\x001D\uff9b" + "\x001E\uff9b\x0001\x0002\x0000\x0008\x0003\uff97\x000E\x004E\x001E\uff97\x0001" + "\x0002\x0000\x000A\x0003\uffda\x000E\uffda\x0016\x0035\x001E\uffda\x0001\x0002" + "\x0000\x0008\x0003\uffd9\x000E\uffd9\x001E\uffd9\x0001\x0002\x0000\x0008\x0017" + "\x0039\x0018\x003A\x0019\x0038\x0001\x0002\x0000\x0010\x0003\uffec\x0009\uffec" + "\x000A\uffec\x000E\uffec\x0016\uffec\x001D\uffec\x001E\uffec\x0001\x0002\x0000" + "\x000A\x0003\uffd7\x000E\uffd7\x0016\uffd7\x001E\uffd7\x0001\x0002\x0000\x0006" + "\x0003\uffd2\x001E\uffd2\x0001\x0002\x0000\x0006\x0003\uffd6\x001E\uffd6\x0001" + "\x0002\x0000\x0006\x0003\uffd4\x001E\uffd4\x0001\x0002\x0000\x0006\x0003\x003F" + "\x001E\x003C\x0001\x0002\x0000\x0012\x0003\uffae\x000F\uffae\x0010\uffae\x0013" + 
 				"\uffae\x0015\uffae\x001A\uffae\x001E\uffae\x001F\uffae\x0001\x0002\x0000\x0008" + "\x000F\uffcd\x0010\uffcd\x0015\uffcd\x0001\x0002\x0000\x0006\x000F\uffce\x0010" + "\uffce\x0001\x0002\x0000\x0012\x0003\uffad\x000F\uffad\x0010\uffad\x0013\uffad" + "\x0015\uffad\x001A\uffad\x001E\uffad\x001F\uffad\x0001\x0002\x0000\x0006\x000F" + "\x0042\x0010\x0043\x0001\x0002\x0000\x0006\x000F\uffcf\x0010\uffcf\x0001\x0002" + "\x0000\x000A\x0003\uffd3\x000E\uffd3\x0016\uffd3\x001E\uffd3\x0001\x0002\x0000" + "\x0006\x0003\x003F\x001E\x003C\x0001\x0002\x0000\x0006\x000F\uffd0\x0010\uffd0" + "\x0001\x0002\x0000\x0006\x0003\x003F\x001E\x003C\x0001\x0002\x0000\x0006\x000F" + "\x0047\x0010\x0043\x0001\x0002\x0000\x000A\x0003\uffd5\x000E\uffd5\x0016\uffd5" + "\x001E\uffd5\x0001\x0002\x0000\x0006\x0003\x003F\x001E\x003C\x0001\x0002\x0000" + "\x0006\x000F\x004A\x0010\x0043\x0001\x0002\x0000\x000A\x0003\uffd1\x000E\uffd1" + "\x0016\uffd1\x001E\uffd1\x0001\x0002\x0000\x000A\x0003\uffd8\x000E\uffd8\x0016" + "\uffd8\x001E\uffd8\x0001\x0002\x0000\x0006\x0003\uffca\x001E\uffca\x0001\x0002" + "\x0000\x0006\x0003\x0056\x001E\x0050\x0001\x0002\x0000\x0004\x000D\x004F\x0001" + "\x0002\x0000\x0006\x0003\x0052\x001E\x0050\x0001\x0002\x0000\x0006\x000F\uffb0" + "\x0014\uffb0\x0001\x0002\x0000\x0004\x000F\uffcc\x0001\x0002\x0000\x0004\x000F" + "\uffaf\x0001\x0002\x0000\x0004\x000F\x0054\x0001\x0002\x0000\x0006\x0003\uffcb" + "\x001E\uffcb\x0001\x0002\x0000\x0004\x0014\uffc7\x0001\x0002\x0000\x0006\x000F" + "\uffc4\x0014\uffaf\x0001\x0002\x0000\x0008\x0002\ufffe\x0003\x0056\x001E\x0050" + "\x0001\x0002\x0000\x0008\x0002\uffc8\x0003\uffc8\x001E\uffc8\x0001\x0002\x0000" + "\x0008\x0002\uffc9\x0003\uffc9\x001E\uffc9\x0001\x0002\x0000\x0004\x000F\x005B" + "\x0001\x0002\x0000\x0008\x0002\uffc3\x0003\uffc3\x001E\uffc3\x0001\x0002\x0000" + "\x0004\x0014\x005D\x0001\x0002\x0000\x000E\x0003\uffc6\x000F\uffc6\x0015\uffc6" + "\x001A\uffc6\x001E\uffc6\x001F\uffc6\x0001\x0002\x0000\x000E\x0003\uff97\x000F" + 
@@ -26,7 +26,7 @@ namespace CUP
 				"\uffe9\x001D\uffe9\x001E\uffe9\x0001\x0002\x0000\x0006\x000F\uffe2\x0010\x0077" + "\x0001\x0002\x0000\x0004\x000F\x007A\x0001\x0002\x0000\x0004\x001E\x0078\x0001" + "\x0002\x0000\x0006\x000F\uffb2\x0010\uffb2\x0001\x0002\x0000\x0006\x000F\uffde" + "\x0010\uffde\x0001\x0002\x0000\x0010\x0003\uffe1\x0009\uffe1\x000A\uffe1\x000E" + "\uffe1\x0016\uffe1\x001D\uffe1\x001E\uffe1\x0001\x0002\x0000\x0004\x000F\x007C" + "\x0001\x0002\x0000\x0010\x0003\uffe5\x0009\uffe5\x000A\uffe5\x000E\uffe5\x0016" + "\uffe5\x001D\uffe5\x001E\uffe5\x0001\x0002\x0000\x0010\x0003\uffea\x0009\uffea" + "\x000A\uffea\x000E\uffea\x0016\uffea\x001D\uffea\x001E\uffea\x0001\x0002\x0000" + "\x0012\x0005\ufffb\x0007\ufffb\x0008\ufffb\x0009\ufffb\x000A\ufffb\x000B\ufffb" + "\x000C\ufffb\x001D\ufffb\x0001\x0002\x0000\x0012\x0005\uff97\x0007\uff97\x0008" + "\uff97\x0009\uff97\x000A\uff97\x000B\uff97\x000C\uff97\x001D\uff97\x0001\x0002" + "\x0000\x0022\x0003\x002C\x0006\x0016\x0007\x0017\x0008\x0020\x0009\x001E\x000A" + "\x0012\x000B\x0022\x000C\x0018\x000D\x000F\x000E\x000D\x0016\x001B\x0017\x0013" + "\x0018\x001D\x0019\x0021\x001D\x0015\x001E\x002B\x0001\x0002\x0000\x0006\x000F" + "\ufffd\x0012\x0029\x0001\x0002\x0000\x0004\x000F\x0083\x0001\x0002\x0000\x0012" + "\x0005\ufffc\x0007\ufffc\x0008\ufffc\x0009\ufffc\x000A\ufffc\x000B\ufffc\x000C" + "\ufffc\x001D\ufffc\x0001\x0002\x0000\x0012\x0005\x0088\x0007\ufff2\x0008\ufff2" + "\x0009\ufff2\x000A\ufff2\x000B\ufff2\x000C\ufff2\x001D\ufff2\x0001\x0002\x0000" + "\x0012\x0005\ufff9\x0007\ufff9\x0008\ufff9\x0009\ufff9\x000A\ufff9\x000B\ufff9" + "\x000C\ufff9\x001D\ufff9\x0001\x0002\x0000\x0010\x0007\x0093\x0008\x0094\x0009" + "\x0007\x000A\x000A\x000B\x0097\x000C\x0095\x001D\x000C\x0001\x0002\x0000\x0012" + "\x0005\ufffa\x0007\ufffa\x0008\ufffa\x0009\ufffa\x000A\ufffa\x000B\ufffa\x000C" + "\ufffa\x001D\ufffa\x0001\x0002\x0000\x0022\x0003\x002C\x0006\x0016\x0007\x0017" + "\x0008\x0020\x0009\x001E\x000A\x0012\x000B\x0022\x000C\x0018\x000D\x000F\x000E" + 
 				"\x000D\x0016\x001B\x0017\x0013\x0018\x001D\x0019\x0021\x001D\x0015\x001E\x002B" + "\x0001\x0002\x0000\x0006\x000F\uffb5\x0012\x008D\x0001\x0002\x0000\x0004\x000F" + "\ufff8\x0001\x0002\x0000\x0004\x000F\x008C\x0001\x0002\x0000\x0012\x0005\ufff7" + "\x0007\ufff7\x0008\ufff7\x0009\ufff7\x000A\ufff7\x000B\ufff7\x000C\ufff7\x001D" + "\ufff7\x0001\x0002\x0000\x0024\x0003\x002C\x0006\x0016\x0007\x0017\x0008\x0020" + "\x0009\x001E\x000A\x0012\x000B\x0022\x000C\x0018\x000D\x000F\x000E\x000D\x0011" + "\x008E\x0016\x001B\x0017\x0013\x0018\x001D\x0019\x0021\x001D\x0015\x001E\x002B" + "\x0001\x0002\x0000\x0004\x000F\uffb6\x0001\x0002\x0000\x0010\x0007\ufff3\x0008" + "\ufff3\x0009\ufff3\x000A\ufff3\x000B\ufff3\x000C\ufff3\x001D\ufff3\x0001\x0002" + "\x0000\x0010\x0007\ufff5\x0008\ufff5\x0009\ufff5\x000A\ufff5\x000B\ufff5\x000C" + "\ufff5\x001D\ufff5\x0001\x0002\x0000\x0010\x0007\ufff1\x0008\ufff1\x0009\ufff1" + "\x000A\ufff1\x000B\ufff1\x000C\ufff1\x001D\ufff1\x0001\x0002\x0000\x0010\x0007" + "\ufff4\x0008\ufff4\x0009\ufff4\x000A\ufff4\x000B\ufff4\x000C\ufff4\x001D\ufff4" + "\x0001\x0002\x0000\x0004\x0006\x00A6\x0001\x0002\x0000\x0004\x0006\x00A3\x0001" + "\x0002\x0000\x0004\x000D\x00A0\x0001\x0002\x0000\x0010\x0007\ufff6\x0008\ufff6" + "\x0009\ufff6\x000A\ufff6\x000B\ufff6\x000C\ufff6\x001D\ufff6\x0001\x0002\x0000" + "\x0004\x000D\x009C\x0001\x0002\x0000\x0010\x0003\uff97\x0009\x0007\x000A\x000A" + "\x000E\uff97\x0016\x0035\x001D\x000C\x001E\uff97\x0001\x0002\x0000\x0008\x0003" + "\uff97\x000E\x004E\x001E\uff97\x0001\x0002\x0000\x0006\x0003\x0056\x001E\x0050" + "\x0001\x0002\x0000\x0008\x0002\uffff\x0003\x0056\x001E\x0050\x0001\x0002\x0000" + "\x0004\x001F\x009D\x0001\x0002\x0000\x0012\x0007\uff99\x0008\uff99\x0009\uff99" + "\x000A\uff99\x000B\uff99\x000C\uff99\x000F\x009E\x001D\uff99\x0001\x0002\x0000" + "\x0010\x0007\uff98\x0008\uff98\x0009\uff98\x000A\uff98\x000B\uff98\x000C\uff98" + "\x001D\uff98\x0001\x0002\x0000\x0010\x0007\uffee\x0008\uffee\x0009\uffee\x000A" + 
 				"\uffee\x000B\uffee\x000C\uffee\x001D\uffee\x0001\x0002\x0000\x0004\x001F\x00A1" + "\x0001\x0002\x0000\x0012\x0007\uff99\x0008\uff99\x0009\uff99\x000A\uff99\x000B" + "\uff99\x000C\uff99\x000F\x009E\x001D\uff99\x0001\x0002\x0000\x0010\x0007\uffed" + "\x0008\uffed\x0009\uffed\x000A\uffed\x000B\uffed\x000C\uffed\x001D\uffed\x0001" + "\x0002\x0000\x0004\x001F\x00A4\x0001\x0002\x0000\x0012\x0007\uff99\x0008\uff99" + "\x0009\uff99\x000A\uff99\x000B\uff99\x000C\uff99\x000F\x009E\x001D\uff99\x0001" + "\x0002\x0000\x0010\x0007\uffef\x0008\uffef\x0009\uffef\x000A\uffef\x000B\uffef" + "\x000C\uffef\x001D\uffef\x0001\x0002\x0000\x0004\x001F\x00A7\x0001\x0002\x0000" + "\x0012\x0007\uff99\x0008\uff99\x0009\uff99\x000A\uff99\x000B\uff99\x000C\uff99" + "\x000F\x009E\x001D\uff99\x0001\x0002\x0000\x0010\x0007\ufff0\x0008\ufff0\x0009" + "\ufff0\x000A\ufff0\x000B\ufff0\x000C\ufff0\x001D\ufff0\x0001\x0002\x0000\x0004" + "\x0002\x0001\x0001\x0002"});
-			_reduce_table = unpackFromStrings(new System.String[]{"\x0000\x00A7\x0000\x0006\x0003\x0003\x002D\x0004\x0001\x0001\x0000\x0002\x0001" + "\x0001\x0000\x0006\x0004\x007E\x001F\x007D\x0001\x0001\x0000\x0008\x000A\x000A" + "\x000C\x0008\x0014\x0007\x0001\x0001\x0000\x000E\x000F\x0010\x0015\x0070\x0016" + "\x0074\x001B\x0071\x0024\x0073\x002C\x0018\x0001\x0001\x0000\x0002\x0001\x0001" + "\x0000\x000E\x000A\x000A\x0014\x0035\x001F\x0033\x0020\x0031\x0021\x0036\x0023" + "\x0032\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x000E\x000F\x0010\x0015\x0013" + "\x0017\x000F\x001C\x001E\x0025\x0019\x002C\x0018\x0001\x0001\x0000\x0002\x0001" + "\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001" + "\x0000\x0004\x0033\x002D\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001" + "\x0001\x0000\x0002\x0001\x0001\x0000\x0008\x0017\x000F\x001C\x001E\x0025\x0025" + "\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001" + "\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001" + "\x0000\x0002\x0001\x0001\x0000\x0004\x0031\x0022\x0001\x0001\x0000\x0002\x0001" + "\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001" + "\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000" + "\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002" + "\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0004\x002C\x0029\x0001\x0001\x0000" + "\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0004" + "\x001C\x002F\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000" + "\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0006\x000D\x004C\x001F\x004B" + "\x0001\x0001\x0000\x0004\x0021\x004A\x0001\x0001\x0000\x0002\x0001\x0001\x0000" + "\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0004" + "\x0036\x0047\x0001\x0001\x0000\x0004\x0034\x0044\x0001\x0001\x0000\x0004\x0035" + 
+			_reduce_table = unpackFromStrings(new string[]{"\x0000\x00A7\x0000\x0006\x0003\x0003\x002D\x0004\x0001\x0001\x0000\x0002\x0001" + "\x0001\x0000\x0006\x0004\x007E\x001F\x007D\x0001\x0001\x0000\x0008\x000A\x000A" + "\x000C\x0008\x0014\x0007\x0001\x0001\x0000\x000E\x000F\x0010\x0015\x0070\x0016" + "\x0074\x001B\x0071\x0024\x0073\x002C\x0018\x0001\x0001\x0000\x0002\x0001\x0001" + "\x0000\x000E\x000A\x000A\x0014\x0035\x001F\x0033\x0020\x0031\x0021\x0036\x0023" + "\x0032\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x000E\x000F\x0010\x0015\x0013" + "\x0017\x000F\x001C\x001E\x0025\x0019\x002C\x0018\x0001\x0001\x0000\x0002\x0001" + "\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001" + "\x0000\x0004\x0033\x002D\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001" + "\x0001\x0000\x0002\x0001\x0001\x0000\x0008\x0017\x000F\x001C\x001E\x0025\x0025" + "\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001" + "\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001" + "\x0000\x0002\x0001\x0001\x0000\x0004\x0031\x0022\x0001\x0001\x0000\x0002\x0001" + "\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001" + "\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000" + "\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002" + "\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0004\x002C\x0029\x0001\x0001\x0000" + "\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0004" + "\x001C\x002F\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000" + "\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0006\x000D\x004C\x001F\x004B" + "\x0001\x0001\x0000\x0004\x0021\x004A\x0001\x0001\x0000\x0002\x0001\x0001\x0000" + "\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0004" + "\x0036\x0047\x0001\x0001\x0000\x0004\x0034\x0044\x0001\x0001\x0000\x0004\x0035" + 
 				"\x003A\x0001\x0001\x0000\x000A\x0022\x003F\x0027\x003C\x002A\x0040\x002B\x003D" + "\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001" + "\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001" + "\x0000\x0002\x0001\x0001\x0000\x0008\x0027\x003C\x002A\x0043\x002B\x003D\x0001" + "\x0001\x0000\x0002\x0001\x0001\x0000\x000A\x0022\x0045\x0027\x003C\x002A\x0040" + "\x002B\x003D\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000" + "\x000A\x0022\x0048\x0027\x003C\x002A\x0040\x002B\x003D\x0001\x0001\x0000\x0002" + "\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001" + "\x0001\x0000\x0008\x000E\x0056\x0018\x0057\x0026\x0054\x0001\x0001\x0000\x0002" + "\x0001\x0001\x0000\x0004\x0026\x0050\x0001\x0001\x0000\x0002\x0001\x0001\x0000" + "\x0004\x0037\x0052\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001" + "\x0000\x0002\x0001\x0001\x0000\x0004\x0038\x005B\x0001\x0001\x0000\x0004\x003A" + "\x0059\x0001\x0001\x0000\x0006\x0018\x0058\x0026\x0054\x0001\x0001\x0000\x0002" + "\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001" + "\x0001\x0000\x0002\x0001\x0001\x0000\x0004\x0039\x005D\x0001\x0001\x0000\x000A" + "\x0019\x005F\x001D\x0061\x001E\x0060\x001F\x005E\x0001\x0001\x0000\x0002\x0001" + "\x0001\x0000\x0006\x001A\x0068\x0027\x0067\x0001\x0001\x0000\x0002\x0001\x0001" + "\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0008\x0019\x005F\x001E" + "\x0064\x001F\x005E\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001" + "\x0000\x0006\x0027\x003C\x002B\x006E\x0001\x0001\x0000\x0006\x001F\x0069\x0029" + "\x006A\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002" + "\x0001\x0001\x0000\x0006\x0028\x006C\x002C\x006D\x0001\x0001\x0000\x0002\x0001" + "\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001" + "\x0000\x0008\x0016\x0074\x001B\x0071\x0024\x007C\x0001\x0001\x0000\x0002\x0001" + 
 				"\x0001\x0000\x0004\x0030\x007A\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0004" + "\x0032\x0075\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0004\x001B\x0078\x0001" + "\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001" + "\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000" + "\x0002\x0001\x0001\x0000\x0006\x0005\x0083\x001F\x0084\x0001\x0001\x0000\x0006" + "\x000F\x0080\x002C\x0018\x0001\x0001\x0000\x0004\x002E\x0081\x0001\x0001\x0000" + "\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0006\x0007\x0085\x0010\x0086" + "\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0012\x0006\x0095\x0008\x0090\x000A" + "\x000A\x000B\x008F\x000C\x0097\x0012\x0091\x0013\x008E\x0014\x0007\x0001\x0001" + "\x0000\x0002\x0001\x0001\x0000\x0008\x000F\x0088\x0011\x0089\x002C\x0018\x0001" + "\x0001\x0000\x0002\x0001\x0001\x0000\x0004\x002F\x008A\x0001\x0001\x0000\x0002" + "\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0004\x002C\x0029\x0001\x0001\x0000" + "\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002" + "\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001" + "\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001" + "\x0000\x000E\x000A\x000A\x0014\x0035\x001F\x0033\x0020\x0098\x0021\x0036\x0023" + "\x0032\x0001\x0001\x0000\x0006\x000D\x0099\x001F\x004B\x0001\x0001\x0000\x0008" + "\x000E\x009A\x0018\x0057\x0026\x0054\x0001\x0001\x0000\x0006\x0018\x0058\x0026" + "\x0054\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0004\x0009\x009E\x0001\x0001" + "\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001\x0000" + "\x0004\x0009\x00A1\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001\x0001" + "\x0000\x0004\x0009\x00A4\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002\x0001" + "\x0001\x0000\x0004\x0009\x00A7\x0001\x0001\x0000\x0002\x0001\x0001\x0000\x0002" + "\x0001\x0001"});
 		}
@@ -149,7 +149,7 @@ namespace CUP
 		
 		/* override error routines */
 		
-		public override void  report_fatal_error(System.String message, System.Object info)
+		public override void  report_fatal_error(string message, object info)
 		{
 			done_parsing();
 			lexer.emit_error(message);
@@ -157,7 +157,7 @@ namespace CUP
 			System.Environment.Exit(1);
 		}
 		
-		public override void  report_error(System.String message, System.Object info)
+		public override void  report_error(string message, object info)
 		{
 			lexer.emit_error(message);
 		}
@@ -170,7 +170,7 @@ namespace CUP
 		private void  InitBlock()
 		{
 			rhs_parts = new production_part[MAX_RHS];
-			multipart_name = new System.String("".ToCharArray());
+			multipart_name = new string("".ToCharArray());
 			symbols = new System.Collections.Hashtable();
 			non_terms = new System.Collections.Hashtable();
 			_cur_side = assoc.no_prec;
@@ -179,7 +179,7 @@ namespace CUP
 		
 		/// <summary>helper routine to clone a new production part adding a given label 
 		/// </summary>
-		protected virtual production_part add_lab(production_part part, System.String lab)
+		protected virtual production_part add_lab(production_part part, string lab)
 		{
 			/* if there is no label, or this is an action, just return the original */
 			if (lab == null || part.is_action())
@@ -223,11 +223,11 @@ namespace CUP
 		/// <summary>string to build up multiple part names 
 		/// </summary>
 		//UPGRADE_NOTE: The initialization of  'multipart_name' was moved to method 'InitBlock'. 'ms-help://MS.VSCC/commoner/redir/redirect.htm?keyword="jlca1005"'
-		protected System.String multipart_name;
+		protected string multipart_name;
 		
 		/// <summary>append a new name segment to the accumulated multipart name 
 		/// </summary>
-		protected virtual void  append_multipart(System.String name)
+		protected virtual void  append_multipart(string name)
 		{
 			System.String dot = "";
 			
@@ -235,7 +235,7 @@ namespace CUP
 			if (multipart_name.Length != 0)
 				dot = ".";
 			
-			multipart_name = System.String.Concat(multipart_name, dot + name);
+			multipart_name = string.Concat(multipart_name, dot + name);
 		}
 		
 		/// <summary>table of declared symbols -- contains production parts indexed by name 
@@ -274,7 +274,7 @@ namespace CUP
 		}
 		/// <summary>add relevant data to terminals 
 		/// </summary>
-		protected virtual void  add_precedence(System.String term)
+		protected virtual void  add_precedence(string term)
 		{
 			if (term == null)
 			{
@@ -548,7 +548,7 @@ namespace CUP
 						System.String RESULT = null;
 						int the_idleft = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).left;
 						int the_idright = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right;
-						System.String the_id = (System.String) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
+						System.String the_id = (string) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
 						RESULT = the_id;
 						CUP_parser_result = new Symbol(42, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).left, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, RESULT);
 					}
@@ -562,7 +562,7 @@ namespace CUP
 						System.String RESULT = null;
 						int the_idleft = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).left;
 						int the_idright = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right;
-						System.String the_id = (System.String) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
+						System.String the_id = (string) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
 						RESULT = the_id;
 						CUP_parser_result = new Symbol(38, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).left, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, RESULT);
 					}
@@ -590,7 +590,7 @@ namespace CUP
 						System.String RESULT = null;
 						int the_idleft = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).left;
 						int the_idright = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right;
-						System.String the_id = (System.String) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
+						System.String the_id = (string) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
 						RESULT = the_id;
 						CUP_parser_result = new Symbol(37, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).left, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, RESULT);
 					}
@@ -618,7 +618,7 @@ namespace CUP
 						System.String RESULT = null;
 						int the_idleft = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).left;
 						int the_idright = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right;
-						System.String the_id = (System.String) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
+						System.String the_id = (string) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
 						RESULT = the_id;
 						CUP_parser_result = new Symbol(36, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).left, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, RESULT);
 					}
@@ -632,7 +632,7 @@ namespace CUP
 						System.Object RESULT = null;
 						int non_term_idleft = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).left;
 						int non_term_idright = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right;
-						System.String non_term_id = (System.String) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
+						System.String non_term_id = (string) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
 						
 						/* see if this non terminal has been declared before */
 						if (symbols[non_term_id] != null)
@@ -668,7 +668,7 @@ namespace CUP
 						System.Object RESULT = null;
 						int term_idleft = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).left;
 						int term_idright = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right;
-						System.String term_id = (System.String) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
+						System.String term_id = (string) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
 						
 						/* see if this terminal has been declared before */
 						if (symbols[term_id] != null)
@@ -697,7 +697,7 @@ namespace CUP
 					// type_id ::= type_id LBRACK RBRACK 
 					{
 						System.Object RESULT = null;
-						multipart_name = System.String.Concat(multipart_name, "[]");
+						multipart_name = string.Concat(multipart_name, "[]");
 						CUP_parser_result = new Symbol(19, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 2)).left, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, RESULT);
 					}
 					return CUP_parser_result;
@@ -743,7 +743,7 @@ namespace CUP
 						System.Object RESULT = null;
 						int an_idleft = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).left;
 						int an_idright = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right;
-						System.String an_id = (System.String) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
+						System.String an_id = (string) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
 						append_multipart(an_id);
 						CUP_parser_result = new Symbol(13, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).left, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, RESULT);
 					}
@@ -757,7 +757,7 @@ namespace CUP
 						System.Object RESULT = null;
 						int another_idleft = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).left;
 						int another_idright = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right;
-						System.String another_id = (System.String) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
+						System.String another_id = (string) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
 						append_multipart(another_id);
 						CUP_parser_result = new Symbol(13, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 2)).left, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, RESULT);
 					}
@@ -782,7 +782,7 @@ namespace CUP
 						System.String RESULT = null;
 						int labidleft = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).left;
 						int labidright = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right;
-						System.String labid = (System.String) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
+						System.String labid = (string) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
 						RESULT = labid;
 						CUP_parser_result = new Symbol(39, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).left, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, RESULT);
 					}
@@ -796,7 +796,7 @@ namespace CUP
 						System.Object RESULT = null;
 						int code_strleft = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).left;
 						int code_strright = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right;
-						System.String code_str = (System.String) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
+						System.String code_str = (string) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
 						
 						/* add a new production part */
 						add_rhs_part(new action_part(code_str));
@@ -813,10 +813,10 @@ namespace CUP
 						System.Object RESULT = null;
 						int symidleft = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).left;
 						int symidright = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).right;
-						System.String symid = (System.String) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value;
+						System.String symid = (string) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value;
 						int labidleft = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).left;
 						int labidright = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right;
-						System.String labid = (System.String) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
+						System.String labid = (string) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
 						
 						/* try to look up the id */
 						production_part symb = (production_part) symbols[symid];
@@ -904,7 +904,7 @@ namespace CUP
 						System.Object RESULT = null;
 						int term_nameleft = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).left;
 						int term_nameright = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right;
-						System.String term_name = (System.String) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
+						System.String term_name = (string) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
 						
 						CUP.symbol sym = null;
 						if (lhs_nt != null)
@@ -993,7 +993,7 @@ namespace CUP
 						System.Object RESULT = null;
 						// propagate RESULT from NT_13
 						if (((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value != null)
-							RESULT = (System.Object) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value;
+							RESULT = (object) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value;
 						
 						CUP_parser_result = new Symbol(22, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 2)).left, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, RESULT);
 					}
@@ -1018,13 +1018,13 @@ namespace CUP
 						System.Object RESULT = null;
 						// propagate RESULT from NT_11
 						if (((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 4)).Value != null)
-							RESULT = (System.Object) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 4)).Value;
+							RESULT = (object) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 4)).Value;
 						// propagate RESULT from NT_12
 						if (((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 2)).Value != null)
-							RESULT = (System.Object) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 2)).Value;
+							RESULT = (object) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 2)).Value;
 						int lhs_idleft = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 5)).left;
 						int lhs_idright = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 5)).right;
-						System.String lhs_id = (System.String) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 5)).Value;
+						System.String lhs_id = (string) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 5)).Value;
 						
 						CUP_parser_result = new Symbol(22, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 5)).left, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, RESULT);
 					}
@@ -1038,7 +1038,7 @@ namespace CUP
 						System.Object RESULT = null;
 						int lhs_idleft = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 2)).left;
 						int lhs_idright = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 2)).right;
-						System.String lhs_id = (System.String) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 2)).Value;
+						System.String lhs_id = (string) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 2)).Value;
 						
 						CUP_parser_result = new Symbol(55, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, RESULT);
 					}
@@ -1052,7 +1052,7 @@ namespace CUP
 						System.Object RESULT = null;
 						int lhs_idleft = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).left;
 						int lhs_idright = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right;
-						System.String lhs_id = (System.String) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
+						System.String lhs_id = (string) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
 						
 						/* lookup the lhs nt */
 						lhs_nt = (non_terminal) non_terms[lhs_id];
@@ -1112,10 +1112,10 @@ namespace CUP
 						System.Object RESULT = null;
 						// propagate RESULT from NT_10
 						if (((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value != null)
-							RESULT = (System.Object) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value;
+							RESULT = (object) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value;
 						int start_nameleft = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 2)).left;
 						int start_nameright = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 2)).right;
-						System.String start_name = (System.String) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 2)).Value;
+						System.String start_name = (string) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 2)).Value;
 						
 						CUP_parser_result = new Symbol(11, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 4)).left, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, RESULT);
 					}
@@ -1129,7 +1129,7 @@ namespace CUP
 						System.Object RESULT = null;
 						int start_nameleft = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).left;
 						int start_nameright = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right;
-						System.String start_name = (System.String) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
+						System.String start_name = (string) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
 						
 						/* verify that the name has been declared as a non terminal */
 						non_terminal nt = (non_terminal) non_terms[start_name];
@@ -1163,7 +1163,7 @@ namespace CUP
 						System.String RESULT = null;
 						int symleft = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).left;
 						int symright = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right;
-						System.String sym = (System.String) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
+						System.String sym = (string) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
 						
 						/* check that the symbol_id is a terminal */
 						if (symbols[sym] == null)
@@ -1185,7 +1185,7 @@ namespace CUP
 						System.String RESULT = null;
 						int symleft = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).left;
 						int symright = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right;
-						System.String sym = (System.String) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
+						System.String sym = (string) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).Value;
 						
 						add_precedence(sym);
 						RESULT = sym;
@@ -1224,7 +1224,7 @@ namespace CUP
 						System.Object RESULT = null;
 						// propagate RESULT from NT_9
 						if (((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 2)).Value != null)
-							RESULT = (System.Object) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 2)).Value;
+							RESULT = (object) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 2)).Value;
 						
 						CUP_parser_result = new Symbol(31, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 4)).left, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, RESULT);
 					}
@@ -1251,7 +1251,7 @@ namespace CUP
 						System.Object RESULT = null;
 						// propagate RESULT from NT_8
 						if (((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 2)).Value != null)
-							RESULT = (System.Object) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 2)).Value;
+							RESULT = (object) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 2)).Value;
 						
 						CUP_parser_result = new Symbol(31, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 4)).left, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, RESULT);
 					}
@@ -1278,7 +1278,7 @@ namespace CUP
 						System.Object RESULT = null;
 						// propagate RESULT from NT_7
 						if (((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 2)).Value != null)
-							RESULT = (System.Object) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 2)).Value;
+							RESULT = (object) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 2)).Value;
 						
 						CUP_parser_result = new Symbol(31, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 4)).left, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, RESULT);
 					}
@@ -1393,7 +1393,7 @@ namespace CUP
 						System.Object RESULT = null;
 						// propagate RESULT from NT_6
 						if (((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value != null)
-							RESULT = (System.Object) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value;
+							RESULT = (object) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value;
 						
 						CUP_parser_result = new Symbol(35, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 2)).left, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, RESULT);
 					}
@@ -1407,7 +1407,7 @@ namespace CUP
 						System.Object RESULT = null;
 						
 						/* reset the accumulated multipart name */
-						multipart_name = new System.String("".ToCharArray());
+						multipart_name = new string("".ToCharArray());
 						
 						CUP_parser_result = new Symbol(49, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, RESULT);
 					}
@@ -1421,7 +1421,7 @@ namespace CUP
 						System.Object RESULT = null;
 						// propagate RESULT from NT_5
 						if (((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value != null)
-							RESULT = (System.Object) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value;
+							RESULT = (object) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value;
 						
 						CUP_parser_result = new Symbol(34, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 2)).left, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, RESULT);
 					}
@@ -1435,7 +1435,7 @@ namespace CUP
 						System.Object RESULT = null;
 						
 						/* reset the accumulated multipart name */
-						multipart_name = new System.String("".ToCharArray());
+						multipart_name = new string("".ToCharArray());
 						
 						CUP_parser_result = new Symbol(48, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, RESULT);
 					}
@@ -1449,7 +1449,7 @@ namespace CUP
 						System.Object RESULT = null;
 						// propagate RESULT from NT_4
 						if (((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value != null)
-							RESULT = (System.Object) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value;
+							RESULT = (object) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value;
 						
 						CUP_parser_result = new Symbol(18, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 3)).left, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, RESULT);
 					}
@@ -1463,7 +1463,7 @@ namespace CUP
 						System.Object RESULT = null;
 						
 						/* reset the accumulated multipart name */
-						multipart_name = new System.String("".ToCharArray());
+						multipart_name = new string("".ToCharArray());
 						
 						CUP_parser_result = new Symbol(47, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, RESULT);
 					}
@@ -1477,7 +1477,7 @@ namespace CUP
 						System.Object RESULT = null;
 						// propagate RESULT from NT_3
 						if (((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value != null)
-							RESULT = (System.Object) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value;
+							RESULT = (object) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value;
 						
 						CUP_parser_result = new Symbol(18, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 3)).left, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, RESULT);
 					}
@@ -1491,7 +1491,7 @@ namespace CUP
 						System.Object RESULT = null;
 						
 						/* reset the accumulated multipart name */
-						multipart_name = new System.String("".ToCharArray());
+						multipart_name = new string("".ToCharArray());
 						
 						CUP_parser_result = new Symbol(46, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, RESULT);
 					}
@@ -1571,7 +1571,7 @@ namespace CUP
 						System.Object RESULT = null;
 						int user_codeleft = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).left;
 						int user_coderight = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).right;
-						System.String user_code = (System.String) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value;
+						System.String user_code = (string) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value;
 						
 						if (emit.scan_code != null)
 							lexer.emit_error("Redundant scan code (skipping)");
@@ -1590,7 +1590,7 @@ namespace CUP
 						System.Object RESULT = null;
 						int user_codeleft = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).left;
 						int user_coderight = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).right;
-						System.String user_code = (System.String) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value;
+						System.String user_code = (string) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value;
 						
 						if (emit.init_code != null)
 							lexer.emit_error("Redundant init code (skipping)");
@@ -1609,7 +1609,7 @@ namespace CUP
 						System.Object RESULT = null;
 						int user_codeleft = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).left;
 						int user_coderight = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).right;
-						System.String user_code = (System.String) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value;
+						System.String user_code = (string) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value;
 						
 						if (emit.parser_code != null)
 							lexer.emit_error("Redundant parser code (skipping)");
@@ -1628,7 +1628,7 @@ namespace CUP
 						System.Object RESULT = null;
 						int user_codeleft = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).left;
 						int user_coderight = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).right;
-						System.String user_code = (System.String) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value;
+						System.String user_code = (string) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value;
 						
 						if (emit.action_code != null)
 							lexer.emit_error("Redundant action code (skipping)");
@@ -1713,7 +1713,7 @@ namespace CUP
 						System.Object RESULT = null;
 						// propagate RESULT from NT_2
 						if (((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value != null)
-							RESULT = (System.Object) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value;
+							RESULT = (object) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value;
 						
 						CUP_parser_result = new Symbol(14, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 3)).left, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, RESULT);
 					}
@@ -1730,7 +1730,7 @@ namespace CUP
 						emit.import_list.Push(multipart_name);
 						
 						/* reset the accumulated multipart name */
-						multipart_name = new System.String("".ToCharArray());
+						multipart_name = new string("".ToCharArray());
 						
 						CUP_parser_result = new Symbol(45, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, RESULT);
 					}
@@ -1777,7 +1777,7 @@ namespace CUP
 						System.Object RESULT = null;
 						// propagate RESULT from NT_1
 						if (((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value != null)
-							RESULT = (System.Object) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value;
+							RESULT = (object) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value;
 						
 						CUP_parser_result = new Symbol(2, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 3)).left, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, RESULT);
 					}
@@ -1794,7 +1794,7 @@ namespace CUP
 						emit.namespace_name = multipart_name;
 						
 						/* reset the accumulated multipart name */
-						multipart_name = new System.String("".ToCharArray());
+						multipart_name = new string("".ToCharArray());
 						
 						CUP_parser_result = new Symbol(44, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, RESULT);
 					}
@@ -1819,7 +1819,7 @@ namespace CUP
 						System.Object RESULT = null;
 						// propagate RESULT from NT_0
 						if (((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 7)).Value != null)
-							RESULT = (System.Object) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 7)).Value;
+							RESULT = (object) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 7)).Value;
 						
 						CUP_parser_result = new Symbol(1, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 7)).left, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, RESULT);
 					}
@@ -1850,7 +1850,7 @@ namespace CUP
 						System.Object RESULT = null;
 						int start_valleft = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).left;
 						int start_valright = ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).right;
-						System.Object start_val = (System.Object) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value;
+						System.Object start_val = (object) ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).Value;
 						RESULT = start_val;
 						CUP_parser_result = new Symbol(0, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 1)).left, ((Symbol) CUP_parser_stack.Peek(CUP_parser_top - 0)).right, RESULT);
 					}

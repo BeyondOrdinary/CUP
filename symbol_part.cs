@@ -28,7 +28,7 @@ namespace CUP
 		/// <param name="lab">an optional label string for the part.
 		/// 
 		/// </param>
-		public symbol_part(symbol sym, System.String lab):base(lab)
+		public symbol_part(symbol sym, string lab):base(lab)
 		{
 			
 			if (sym == null)
@@ -86,7 +86,7 @@ namespace CUP
 		
 		/// <summary>Generic equality comparison. 
 		/// </summary>
-		public  override bool Equals(System.Object other)
+		public  override bool Equals(object other)
 		{
 			if (!(other is symbol_part))
 				return false;
@@ -107,7 +107,7 @@ namespace CUP
 		
 		/// <summary>Convert to a string. 
 		/// </summary>
-		public override System.String ToString()
+		public override string ToString()
 		{
 			if (the_symbol() != null)
 			{

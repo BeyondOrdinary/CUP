@@ -197,7 +197,7 @@ namespace CUP
 		
 		/// <summary>Generic equality comparison. 
 		/// </summary>
-		public  override bool Equals(System.Object other)
+		public  override bool Equals(object other)
 		{
 			if (!(other is lr_item_core))
 				return false;
@@ -238,7 +238,7 @@ namespace CUP
 		/// <summary>Convert to a string (separated out from toString() so we can call it
 		/// from subclass that overrides toString()).
 		/// </summary>
-		public virtual System.String to_simple_string()
+		public virtual string to_simple_string()
 		{
 			System.String result;
 			production_part part;
@@ -286,7 +286,7 @@ namespace CUP
 		
 		/// <summary>Convert to a string 
 		/// </summary>
-		public override System.String ToString()
+		public override string ToString()
 		{
 			/* can't throw here since super class doesn't, so we crash instead */
 			try

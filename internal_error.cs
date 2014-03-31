@@ -8,7 +8,7 @@ namespace CUP
 	{
 		/// <summary>Constructor with a message 
 		/// </summary>
-		public internal_error(System.String msg):base(msg)
+		public internal_error(string msg):base(msg)
 		{
 		}
 		

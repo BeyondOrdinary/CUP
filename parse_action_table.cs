@@ -114,7 +114,7 @@ namespace CUP
 		/*. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .*
 		
 		/** Convert to a string. */
-		public override System.String ToString()
+		public override string ToString()
 		{
 			System.String result;
 			int cnt;

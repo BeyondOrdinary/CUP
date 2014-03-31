@@ -32,7 +32,7 @@ namespace CUP.runtime
 		/// *****************************
 		/// </summary>
 		
-		public Symbol(int id, int l, int r, System.Object o):this(id)
+		public Symbol(int id, int l, int r, object o):this(id)
 		{
 			left = l;
 			right = r;
@@ -44,7 +44,7 @@ namespace CUP.runtime
 		/// ******************************
 		/// </summary>
 		
-		public Symbol(int id, System.Object o):this(id, - 1, - 1, o)
+		public Symbol(int id, object o):this(id, - 1, - 1, o)
 		{
 		}
 		
@@ -103,13 +103,13 @@ namespace CUP.runtime
 		/// </summary>
 		
 		public int left, right;
-		public System.Object Value;
+		public object Value;
 		
 		/// <summary>**************************
 		/// Printing this token out. (Override for pretty-print).
 		/// **************************
 		/// </summary>
-		public override System.String ToString()
+		public override string ToString()
 		{
 			return "#" + sym;
 		}
