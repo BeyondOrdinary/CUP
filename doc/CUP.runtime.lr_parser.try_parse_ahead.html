@@ -1,0 +1,49 @@
+<html dir="LTR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    </meta>
+    <meta name="generator" content="NDoc 1.3" />
+    <title>lr_parser.try_parse_ahead Method</title>
+    <link rel="stylesheet" type="text/css" href="ndoc.css">
+    </link>
+    <script src="ndoc.js" type="text/javascript">
+    </script>
+  </head>
+  <body id="bodyID" class="dtBODY">
+    <INPUT class="userDataStyle" id="userDataCache" type="hidden" />
+    <div id="nsbanner">
+      <div id="bannerrow1">
+        <table class="bannerparthead" cellspacing="0">
+          <tr id="hdr">
+            <td class="runninghead" nowrap="true">An NDoc Documented Class Library</td>
+            <td class="product" nowrap="true">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="TitleRow">
+        <h1 class="dtH1">lr_parser.try_parse_ahead Method </h1>
+      </div>
+    </div>
+    <div id="nstext">
+      <p>Do a simulated parse forward (a "parse ahead") from the current stack configuration using stored lookahead input and a virtual parse stack. Return true if we make it all the way through the stored lookahead input without error. This basically simulates the action of parse() using only our saved "parse ahead" input, and not executing any actions. * </p>
+<PRE class="syntax"><SPAN class="lang">[Visual Basic]
+</SPAN><b>Overridable Protected Function try_parse_ahead( _ 
+   ByVal <i>debug</i> As <a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemBooleanClassTopic.htm">Boolean</a> _ 
+) As <a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemBooleanClassTopic.htm">Boolean</a>
+</b><SPAN class="lang">[C#]
+</SPAN><b>protected virtual <a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemBooleanClassTopic.htm">bool</a> try_parse_ahead(
+   <a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemBooleanClassTopic.htm">bool</a> <i>debug</i>
+);
+</b><SPAN class="lang">[C++]
+</SPAN><b>protected: virtual <a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemBooleanClassTopic.htm">bool</a> try_parse_ahead(
+   <a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemBooleanClassTopic.htm">bool</a> <i>debug</i>
+);
+</b><SPAN class="lang">[JScript]
+</SPAN><b>protected virtual function try_parse_ahead(
+   <a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemBooleanClassTopic.htm">bool</a> <i>debug</i>
+): <a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemBooleanClassTopic.htm">bool</a>;
+</b></PRE><h4 class="dtH4">Parameters</h4><dl><dt><i>debug</i></dt><dd>should we produce debugging messages as we parse. </dd></dl><h4 class="dtH4">See Also</h4><p><a href="CUP.runtime.lr_parser.html">lr_parser Class</a> | <a href="CUP.runtime.html">CUP.runtime Namespace</a></p><object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e" viewastext="true" style="display: none;"><param name="Keyword" value="try_parse_ahead method"></param><param name="Keyword" value="try_parse_ahead method, lr_parser class"></param><param name="Keyword" value="lr_parser.try_parse_ahead method"></param></object><DIV CLASS="footer"><p><center><font color="red"><i>
+								Syntax based on .NET Framework version 1.1.<br /></i></font></center></p></DIV><hr /><div id="footer"><p><a href="mailto:support@beyond-ordinary.com?subject=An%20NDoc%20Documented%20Class%20Library%20Documentation%20Feedback:%20lr_parser.try_parse_ahead Method ">Send comments on this topic.</a></p><p><a>(c) Scott E. Hudson, Frank Flannery, and C. Scott Ananian, .NET porting (c) Beyond Ordinary Software Solutions.</a></p><p></p></div></div>
+  </body>
+</html>
